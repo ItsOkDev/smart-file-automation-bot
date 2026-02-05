@@ -11,7 +11,7 @@ Built a Python automation bot that automatically organizes and renames files bas
 - Renames files using date and counter
 - Handles unknown file types
 - Logs all actions and errors
-- Uses exception handling for reliability
+- Uses exception handling for reliability.
 
 ## Business Impact
 - Reduces manual effort and easy the workflow
