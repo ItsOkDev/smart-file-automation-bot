@@ -14,7 +14,7 @@ Built a Python automation bot that automatically organizes and renames files bas
 - Uses exception handling for reliability
 
 ## Business Impact
-- Reduces manual effort
+- Reduces manual effort and easy the workflow
 - Improves file traceability
 - Mimics real-world RPA automation behavior
 
