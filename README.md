@@ -6,7 +6,7 @@ Manual file organization in Downloads folders leads to clutter, lost files, and 
 ## Solution
 Built a Python automation bot that automatically organizes and renames files based on type and date.
 
-## Features
+## Important Features
 - Organizes files by extension
 - Renames files using date and counter
 - Handles unknown file types
