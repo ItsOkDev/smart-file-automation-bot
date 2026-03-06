@@ -11,7 +11,7 @@ This project was created to solve the common problem of **messy download folders
 
 ---
 
-# ✨ Features
+# Features
 
 ### 📂 Automatic File Organization
 
@@ -183,6 +183,6 @@ Planned features for upcoming versions:
 # 👨‍💻 Author
 
 **Devesh Pawar**
-Python Developer | Data Analyst
+Python Developer
 
 GitHub: https://github.com/itsOkDev
