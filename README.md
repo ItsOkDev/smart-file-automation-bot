@@ -1,33 +1,188 @@
-# Smart File Automation Bot
+# 🚀 Smart File Organizer
 
-## Problem
-Manual file organization in Downloads folders leads to clutter, lost files, and wasted time.
+![Python](https://img.shields.io/badge/Python-3.x-blue)
+![Automation](https://img.shields.io/badge/Automation-File%20Management-green)
+![Status](https://img.shields.io/badge/Version-V2-orange)
+![License](https://img.shields.io/badge/License-MIT-lightgrey)
 
-## Solution
-Built a Python automation bot that automatically organizes and renames files based on type and date.
+A Python automation tool that automatically organizes files in the **Downloads folder** by file type and renames them using timestamps for better file management.
 
-## Important Features
-- Organizes files by extension
-- Renames files using date and counter
-- Handles unknown file types
-- Logs all actions and errors
-- Uses exception handling for reliability.
+This project was created to solve the common problem of **messy download folders** by automatically categorizing and organizing files.
 
-## Business Impact
-- Reduces manual effort and easy the workflow
-- Improves file traceability
-- Mimics real-world RPA automation behavior
+---
 
-## Actual Working
-I built a Python-based file automation bot that automatically organizes files by type and renames them using date and counters. I added logging and exception handling to make it production-ready and suitable for RPA-style workflows. This automation reduces manual effort and improves reliability.
+# ✨ Features
 
-## Log file get generated
-2026-01-19 17:08:43,898 - INFO - Moved & renamed: Wolf Image.jpg -> Images/2026-01-19_01_Wolf Image.jpg
+### 📂 Automatic File Organization
 
-2026-01-19 17:08:43,901 - INFO - Moved & renamed: Workbook_ June 2025.pdf -> PDF/2026-01-19_01_Workbook_ June 2025.pdf
+Automatically detects file extensions and moves them into categorized folders.
 
-2026-01-19 17:08:43,901 - INFO - Automation completed
+### 🏷 Smart File Renaming
 
-2026-01-19 17:17:42,699 - INFO - Automation started
+Files are renamed using a **date + counter format** to prevent overwriting.
 
-2026-01-19 17:17:42,701 - INFO - Automation completed
+Example:
+
+```
+2026-03-06_01_invoice.pdf
+```
+
+### 🧪 Dry Run Mode
+
+Preview changes before actually moving files.
+
+### 📊 Execution Summary
+
+After running the script, a summary report is displayed.
+
+Example:
+
+```
+Total Files Scanned : 32
+Files Organized     : 29
+Files Skipped       : 3
+```
+
+### 📝 Logging System
+
+All actions are logged for tracking and debugging.
+
+Log file:
+
+```
+Downloads/automation.log
+```
+
+---
+
+# 📁 Supported File Categories
+
+| File Extension      | Category Folder |
+| ------------------- | --------------- |
+| .pdf                | PDF             |
+| .jpg / .jpeg / .png | Images          |
+| .csv / .xlsx        | Data            |
+| .txt                | Text            |
+| .mp3 / .wav         | Audio           |
+| .mp4 / .mov         | Videos          |
+| .zip / .rar         | Archives        |
+| .exe                | Executables     |
+| Others              | Misc            |
+
+---
+
+# ⚙️ How It Works
+
+1️⃣ The script scans the **Downloads folder**
+
+2️⃣ Detects file extensions
+
+3️⃣ Maps the extension to a category folder
+
+4️⃣ Renames the file using:
+
+```
+YYYY-MM-DD_counter_filename
+```
+
+5️⃣ Moves the file into the correct folder
+
+---
+
+# 📊 Example
+
+### Before Running Script
+
+```
+Downloads/
+invoice.pdf
+photo.jpg
+song.mp3
+video.mp4
+report.xlsx
+```
+
+### After Running Script
+
+```
+Downloads/
+
+PDF/
+2026-03-06_01_invoice.pdf
+
+Images/
+2026-03-06_01_photo.jpg
+
+Audio/
+2026-03-06_01_song.mp3
+
+Videos/
+2026-03-06_01_video.mp4
+
+Data/
+2026-03-06_01_report.xlsx
+```
+
+---
+
+# 🛠 Technologies Used
+
+* Python
+* OS Module
+* shutil Module
+* logging Module
+* datetime Module
+
+---
+
+# 📦 Project Structure
+
+```
+smart-file-organizer
+│
+├ organizer_v1.py
+├ organizer_v2.py
+└ README.md
+```
+
+---
+
+# 📈 Project Evolution
+
+### Version 1
+
+Basic automation script
+
+* File organization
+* File renaming
+* Logging
+
+### Version 2
+
+Improved automation system
+
+* Dry run mode
+* Summary report
+* File size logging
+* Better error handling
+
+---
+
+# 🔮 Future Improvements
+
+Planned features for upcoming versions:
+
+* Duplicate file detection
+* Recursive folder scanning
+* Command-line interface
+* Configuration file support
+* Automated scheduling
+
+---
+
+# 👨‍💻 Author
+
+**Devesh Pawar**
+Python Developer | Data Analyst
+
+GitHub: https://github.com/itsOkDev
