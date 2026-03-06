@@ -180,6 +180,20 @@ Planned features for upcoming versions:
 
 ---
 
+## Advanced Version (V7)
+
+This project later evolved into **Master Smart File V7**, which includes advanced automation features such as:
+
+- duplicate detection
+- automation scheduler
+- undo system
+- advanced rename engine
+- file analysis reports
+
+Documentation is available in:
+
+docs/v7_features.md
+
 # 👨‍💻 Author
 
 **Devesh Pawar**
