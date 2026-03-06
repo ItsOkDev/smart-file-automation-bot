@@ -192,7 +192,7 @@ This project later evolved into **Master Smart File V7**, which includes advance
 
 Documentation is available in:
 
-docs/v7_features.md
+[docs/v7_features.md](https://github.com/ItsOkDev/smart-file-automation-bot/blob/main/docs/v7_features.md)
 
 # 👨‍💻 Author
 
